@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header img {
+  max-width: 400px;
+  display: block;
+  height: auto;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 0 1rem;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+input[type='email'] {
+  background-color: white;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+}
+input[type='submit'] {
+  background-color: rgb(124, 235, 124);
+  color: white;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+input {
+  display: block;
+}
+.section {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+svg {
+  width: 64px;
+  height: 64px;
+  fill: rgb(124, 235, 124);
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+#cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  width: calc(80% / 3);
+}
+.head {
+  background-color: rgba(128, 128, 128, 0.705);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+.body {
+  padding: 16px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.body > * {
+  margin-top: 8px;
+}
+button {
+  background-color: rgb(124, 235, 124);
+  border: 3px black solid;
+  height: 40px;
+  padding: 10px 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+footer a {
+  margin-left: 10px;
+  margin-right: 0;
+}
+footer {
+  background-color: rgb(204, 201, 201);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: 13vh;
+}
+footer * {
+  background-color: rgb(204, 201, 201);
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  text-align: right;
+}
+footer p {
+  text-align: right;
+}
