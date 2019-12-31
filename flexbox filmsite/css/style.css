@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body,
+input,
+button,
+textarea {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+img {
+  width: 100%;
+  /* height: auto; */
+  display: block;
+}
+body {
+  background-color: #ededed;
+}
+header,
+footer {
+  background-color: green;
+  height: 100px;
+}
+.aside-area {
+  background-color: blue;
+}
+@media screen and (min-width: 1120px) {
+  .main-content {
+    display: flex;
+  }
+  .aside-area {
+    flex: 0 0 320px;
+  }
+}
+/********************************
+        START THE HEADER STYLE
+**********************************/
+.site-header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.site-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.site-description {
+  font-style: italic;
+  font-size: 18px;
+}
+.main-area {
+  padding: 1.5rem;
+}
+nav {
+  background-color: rgb(241, 241, 110);
+  padding: 1rem;
+}
+@media screen and (min-width: 1120px) {
+  .site-title {
+    font-size: 2.5rem;
+  }
+  .site-header {
+    height: 400px;
+  }
+}
+/********************************
+        END THE HEADER STYLE
+**********************************/
+/********************************
+        START THE POSTS STYLE
+**********************************/
+
+.post {
+  background-color: white;
+  margin-bottom: 20px;
+}
+.post a {
+  text-decoration: none;
+  color: black;
+}
+.post-content {
+  padding: 0px 40px 20px;
+}
+.post-content h2 {
+  background-color: #f6d200;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 0 -40px 30px;
+}
+@media screen and (min-width: 820px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .post {
+    flex-basis: 49%;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .post-half {
+    flex-basis: 49%;
+  }
+  .post-full {
+    flex-basis: 100%;
+  }
+  .post-one-third {
+    flex-basis: 32%;
+  }
+}
