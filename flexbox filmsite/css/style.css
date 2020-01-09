@@ -124,3 +124,40 @@ nav {
     flex-basis: 32%;
   }
 }
+
+/********************************
+        END THE POSTS STYLE
+**********************************/
+/********************************
+        START SECTIONS STYLE
+**********************************/
+
+.section-header {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.watch-card {
+  background-color: black;
+  color: white;
+  margin-bottom: 1rem;
+}
+.watch-content {
+  padding: 40px;
+}
+.watch-content h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.movie-info span {
+  margin-right: 10px;
+  font-weight: 900;
+}
+.movie-info p{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.movie-info a{
+  color: white;
+}
