@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="welcome to the home screen of our hotel website" />
+    <meta name="keywords" content="hotel, boston, massachusets" />
+    <title>contact page</title>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-home" viewBox="0 0 32 32">
+            <title>home</title>
+            <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+        </symbol>
+        <symbol id="icon-books" viewBox="0 0 36 32">
+            <title>books</title>
+            <path
+                d="M7 4h-6c-0.55 0-1 0.45-1 1v22c0 0.55 0.45 1 1 1h6c0.55 0 1-0.45 1-1v-22c0-0.55-0.45-1-1-1zM6 10h-4v-2h4v2z">
+            </path>
+            <path
+                d="M17 4h-6c-0.55 0-1 0.45-1 1v22c0 0.55 0.45 1 1 1h6c0.55 0 1-0.45 1-1v-22c0-0.55-0.45-1-1-1zM16 10h-4v-2h4v2z">
+            </path>
+            <path
+                d="M23.909 5.546l-5.358 2.7c-0.491 0.247-0.691 0.852-0.443 1.343l8.999 17.861c0.247 0.491 0.852 0.691 1.343 0.443l5.358-2.7c0.491-0.247 0.691-0.852 0.443-1.343l-8.999-17.861c-0.247-0.491-0.852-0.691-1.343-0.443z">
+            </path>
+        </symbol>
+        <symbol id="icon-headphones" viewBox="0 0 32 32">
+            <title>headphones</title>
+            <path d="M9 18h-2v14h2c0.55 0 1-0.45 1-1v-12c0-0.55-0.45-1-1-1z"></path>
+            <path d="M23 18c-0.55 0-1 0.45-1 1v12c0 0.55 0.45 1 1 1h2v-14h-2z"></path>
+            <path
+                d="M32 16c0-8.837-7.163-16-16-16s-16 7.163-16 16c0 1.919 0.338 3.759 0.958 5.464-0.609 1.038-0.958 2.246-0.958 3.536 0 3.526 2.608 6.443 6 6.929v-13.857c-0.997 0.143-1.927 0.495-2.742 1.012-0.168-0.835-0.258-1.699-0.258-2.584 0-7.18 5.82-13 13-13s13 5.82 13 13c0 0.885-0.088 1.749-0.257 2.584-0.816-0.517-1.745-0.87-2.743-1.013v13.858c3.392-0.485 6-3.402 6-6.929 0-1.29-0.349-2.498-0.958-3.536 0.62-1.705 0.958-3.545 0.958-5.465z">
+            </path>
+        </symbol>
+    </svg>
+
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <h1>HBT</h1>
+                </a>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a class="current" href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="form" class="bg-light">
+        <div class="container">
+            <form action="process.php" method="POST">
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message">type your message</textarea>
+                </div>
+                <button class="btn" type="submit">submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="features" class="bg-grey">
+        <div class="box">
+            <svg class="icon icon-home">
+                <use xlink:href="#icon-home"></use>
+            </svg>
+            <h1>location</h1>
+            <p>
+                in the middle of nowhere hustling
+            </p>
+        </div>
+        <div class="box">
+            <svg class="icon icon-books">
+                <use xlink:href="#icon-books"></use>
+            </svg>
+            <h1>phone number</h1>
+            <p>
+                +212693709452
+            </p>
+        </div>
+        <div class="box">
+            <svg class="icon icon-headphones">
+                <use xlink:href="#icon-headphones"></use>
+            </svg>
+            <h1>email adress</h1>
+            <p>
+                mohamedelghannay@gmail.com.
+            </p>
+        </div>
+    </section>
+    <footer id="footer" class="bg-dark">
+        El Ghannay &copy; all rights reserved :)
+    </footer>
+</body>
+
+</html>
